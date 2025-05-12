@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+ .box{
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+
+ }
+ #boxContainer{
+    vertical-align: middle;
+    display: grid;
+ }
+    body{
+        align-items: center;
+        justify-content: center;
+ }
+ @media only screen and (max-width:400px) {
+        #boxContainer {
+        display: flex;
+        gap: 10px;
+        .box {background-color: yellow;
+
+        }
+    }
+    }
+
+
+    @media only screen and (max-width:700px) {
+        #boxContainer {
+            display: flex;
+          flex-direction: column;
+            gap: 10px;
+            
+        }
+    }
+     
+
+    @media only screen and (min-width:700px) {
+        #boxContainer {
+            display: flex;
+            gap: 10px;
+        }
+    }
+
+</style>
+<body class="body" style=" display: flex; align-items: justify-content; ">
+    <div id="boxContainer">
+    <div id="box1" class="box"> </div>
+    <div id="box2" class="box"> </div>
+    <div id="box3" class="box"></div>
+    </div>
+</body>
+</html>
